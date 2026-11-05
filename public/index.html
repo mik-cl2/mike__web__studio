@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Affordable professional websites for Kenyan businesses.">
+  <title>MIKE WEB STUDIO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#home" class="logo">MIKE<span>WEB</span> STUDIO</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Packages</a>
+    <a href="#samples">Examples</a>
+    <a href="#order">Order</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="tag">YOUR BUSINESS. YOUR WEBSITE.</p>
+      <h1>Take Your Business <span>Online.</span></h1>
+      <p>Professional, affordable websites for shops, salons,
+      restaurants, schools and growing businesses.</p>
+      <a href="#services" class="btn">Explore Packages</a>
+    </div>
+
+    <div class="hero-card">
+      <div class="browser-bar">● ● ●</div>
+      <div class="mockup">
+        <span>YOUR BUSINESS</span>
+        <h2>Welcome to our website</h2>
+        <p>Grow your business online.</p>
+        <div class="mockup-button">Discover More</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <p class="tag">OUR SERVICES</p>
+    <h2>Choose Your Website Package</h2>
+
+    <div class="packages">
+      <article class="package">
+        <h3>Basic Website</h3>
+        <p class="price">KSh 500</p>
+        <p>Simple one-page website for small businesses.</p>
+        <ul>
+          <li>One-page design</li>
+          <li>Contact information</li>
+          <li>Mobile-friendly layout</li>
+        </ul>
+        <button class="choose-btn" data-package="Basic Website">
+          Choose Package
+        </button>
+      </article>
+
+      <article class="package featured">
+        <span class="popular">POPULAR</span>
+        <h3>Business Website</h3>
+        <p class="price">KSh 1,500</p>
+        <p>A professional website for growing businesses.</p>
+        <ul>
+          <li>Up to five pages</li>
+          <li>Services section</li>
+          <li>Contact form design</li>
+        </ul>
+        <button class="choose-btn" data-package="Business Website">
+          Choose Package
+        </button>
+      </article>
+
+      <article class="package">
+        <h3>Advanced Website</h3>
+        <p class="price">KSh 3,000</p>
+        <p>A larger website with additional customization.</p>
+        <ul>
+          <li>Up to eight pages</li>
+          <li>Custom design</li>
+          <li>Extra features by agreement</li>
+        </ul>
+        <button class="choose-btn" data-package="Advanced Website">
+          Choose Package
+        </button>
+      </article>
+    </div>
+
+    <p class="notice">
+      Introductory example prices. Hosting, domain costs and final
+      project requirements must be agreed separately.
+    </p>
+  </section>
+
+  <section class="section examples" id="samples">
+    <p class="tag">OUR PORTFOLIO</p>
+    <h2>Website Examples</h2>
+
+    <div class="samples">
+      <div class="sample">
+        <div class="sample-art salon">BEAUTY & STYLE</div>
+        <h3>Salon Website</h3>
+        <p>For beauty salons and barbershops.</p>
+      </div>
+
+      <div class="sample">
+        <div class="sample-art restaurant">TASTY BITES</div>
+        <h3>Restaurant Website</h3>
+        <p>For restaurants and food businesses.</p>
+      </div>
+
+      <div class="sample">
+        <div class="sample-art school">BRIGHT FUTURE</div>
+        <h3>School Website</h3>
+        <p>For schools and learning centres.</p>
+      </div>
+    </div>
+    <p class="notice">These are demonstration concepts, not completed customer projects.</p>
+  </section>
+
+  <section class="section order-section" id="order">
+    <p class="tag">GET STARTED</p>
+    <h2>Request Your Website</h2>
+    <p>Select a package and tell us about your project.</p>
+
+    <form id="orderForm">
+      <label for="customer">Your name</label>
+      <input id="customer" name="customer" required placeholder="Your name">
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+      <label for="business">Business or project name</label>
+      <input id="business" name="business" required placeholder="Business name">
+
+      <label for="type">Website type</label>
+      <select id="type" name="type" required>
+        <option value="">Choose one</option>
+        <option>Salon or barbershop</option>
+        <option>Restaurant</option>
+        <option>School or tutoring</option>
+        <option>Online shop</option>
+        <option>Personal portfolio</option>
+        <option>Other</option>
+      </select>
+
+      <label for="package">Website package</label>
+      <select id="package" name="package" required>
+        <option value="">Choose a package</option>
+        <option>Basic Website - KSh 500</option>
+        <option>Business Website - KSh 1,500</option>
+        <option>Advanced Website - KSh 3,000</option>
+      </select>
+
+      <label for="details">Describe your website</label>
+      <textarea id="details" name="details" rows="4"
+        placeholder="What would you like included?"></textarea>
+
+      <button type="submit" class="btn submit-btn">
+        Prepare My Request
+      </button>
+    </form>
+
+    <div id="result" class="result" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 MIKE WEB STUDIO. All rights reserved.</p>
+  <p>Building your business online, one website at a time.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

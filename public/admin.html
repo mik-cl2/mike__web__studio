@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKE WEB STUDIO | Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    
+    <header class="topbar">
+        <h1>MIKE WEB STUDIO</h1>
+        <span>ADMIN DASHBOARD</span>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <p class="eyebrow">CONTROL CENTRE</p>
+            <h2>Order Management</h2>
+            <p>View and manage website requests.</p>
+        </section>
+
+        <section class="stats">
+            <article class="stat-card">
+                <p>Total Orders</p>
+                <h3 id="totalOrders">0</h3>
+            </article>
+            <article class="stat-card">
+                <p>Pending</p>
+                <h3 id="pendingOrders">0</h3>
+            </article>
+            <article class="stat-card">
+                <p>In Progress</p>
+                <h3 id="progressOrders">0</h3>
+            </article>
+            <article class="stat-card">
+                <p>Completed</p>
+                <h3 id="completedOrders">0</h3>
+            </article>
+        </section>
+
+        <section class="orders-section">
+            <h2>Recent Orders</h2>
+            <p id="message">Dashboard is waiting for orders.</p>
+            <div id="ordersList"></div>
+        </section>
+    </main>
+    <!-- Bottom Logout Area -->
+<div class="logout-area">
+    <button id="logoutButton" class="logout-button" type="button">
+        <span class="logout-icon">↪</span>
+        <span>Logout</span>
+    </button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

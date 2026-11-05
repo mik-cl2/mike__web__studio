@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: #f4f7ff;
+    min-height: 100vh;
+}
+
+.topbar {
+    background: #0b1930;
+    border-bottom: 1px solid #18365d;
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.topbar h1 {
+    color: #ffffff;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.topbar span {
+    color: #55aaff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+.welcome {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #55aaff;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome p:last-child {
+    color: #9aabc4;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.stat-card {
+    background: #101f35;
+    border: 1px solid #1d3b60;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.stat-card p {
+    color: #a8bad2;
+    font-size: 14px;
+}
+
+.stat-card h3 {
+    color: #55aaff;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.orders-section {
+    background: #101f35;
+    border: 1px solid #1d3b60;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.orders-section h2 {
+    margin-bottom: 15px;
+}
+
+#message {
+    color: #a8bad2;
+    margin-bottom: 15px;
+}
+
+.order-card {
+    background: #0a1729;
+    border: 1px solid #24476e;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.order-card h3 {
+    color: #67b5ff;
+    margin-bottom: 12px;
+}
+
+.order-card p {
+    color: #c2cee0;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.order-card select {
+    margin-top: 12px;
+    padding: 10px;
+    background: #142b49;
+    color: white;
+    border: 1px solid #3679b9;
+    border-radius: 6px;
+}
+
+@media (max-width: 750px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 420px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+/* COOL LOGOUT BUTTON */
+.logout-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 22px;
+
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(255, 65, 108, 0.3);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+.logout-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(255, 65, 108, 0.45);
+    filter: brightness(1.1);
+}
+
+.logout-button:active {
+    transform: translateY(0) scale(0.96);
+}
+
+.logout-icon {
+    font-size: 19px;
+    transition: transform 0.25s ease;
+}
+
+.logout-button:hover .logout-icon {
+    transform: translateX(4px);
+}
+/* BOTTOM LOGOUT AREA */
+.logout-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 30px 20px;
+    border-top: 1px solid #24476e;
+}
+
+/* COOL LOGOUT BUTTON */
+.logout-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 13px 28px;
+    min-width: 150px;
+
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(255, 65, 108, 0.3);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.logout-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(255, 65, 108, 0.45);
+}
+
+.logout-button:active {
+    transform: scale(0.96);
+}
+
+.logout-icon {
+    font-size: 19px;
+}
+
+@media (max-width: 600px) {
+    .logout-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

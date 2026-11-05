@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKE WEB STUDIO | Admin Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main class="login-card">
+        <h1>MIKE WEB STUDIO</h1>
+        <p class="subtitle">ADMINISTRATION PORTAL</p>
+
+        <h2>Welcome Back</h2>
+        <p class="description">Sign in to manage your website orders.</p>
+
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input
+                id="username"
+                name="username"
+                type="text"
+                autocomplete="username"
+                required
+            >
+
+            <label for="password">Password</label>
+            <div class="password-box">
+    <input
+        id="password"
+        name="password"
+        type="password"
+        autocomplete="current-password"
+        required
+    >
+    <button type="button" id="togglePassword">
+        Show
+    </button>
+</div>
+
+            <button type="submit" id="loginButton">Sign In</button>
+        </form>
+
+        <p id="message" role="status"></p>
+        <p class="footer">MIKE WEB STUDIO · ADMIN ACCESS</p>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
